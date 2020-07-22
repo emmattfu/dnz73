@@ -5,7 +5,7 @@ import '../styles/nav.css'
 const Navigation = () => {
     return (
         <nav className="nav">
-                <div className="nav__item">Головна</div>
+                <div className="nav__item"><span>Головна</span></div>
                 <div className="nav__item">Візитівка</div>
                 <div className="nav__item">Новини</div>
                 <div className="nav__item">Реєстрація до закладу</div>

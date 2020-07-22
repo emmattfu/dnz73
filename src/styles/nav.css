@@ -6,10 +6,12 @@
 .nav__item {
     cursor: pointer;
     color: white;
-    padding: 10px 40px;
+    padding: 10px 50px;
+    position: relative;
 
 }
 
-.nav__item + .nav__item {
-    margin-left: 20px;
+.nav__item:hover {
+    background-color: chartreuse;
+    transition: background-color .2s linear;
 }
