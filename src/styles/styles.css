@@ -1,13 +1,15 @@
-
 body {
     display: flex;
     flex-direction: column;
+    color: black;
+    background-color: #e7ecef;
 }
 .App {
     overflow: hidden;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    margin-top: 50px;
 }
 footer {
     flex-grow: 0;
@@ -16,3 +18,4 @@ footer {
 header {
     flex-grow: 0;
 }
+

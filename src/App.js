@@ -3,6 +3,7 @@ import React from 'react';
 import {Header, Footer} from './components'
 
 import './styles/styles.css';
+import { Container } from 'react-bootstrap';
 
 
 function App() {
@@ -10,7 +11,11 @@ function App() {
     <div className="App">
       <Header />
 
-      <div className="content">COntent</div>
+      <div className="content">
+        <Container>
+          COntent
+        </Container>  
+      </div>
       
       <Footer />
     </div>

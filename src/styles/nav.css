@@ -1,0 +1,15 @@
+.nav {
+    display: flex;
+    background: blueviolet;
+}
+
+.nav__item {
+    cursor: pointer;
+    color: white;
+    padding: 10px 40px;
+
+}
+
+.nav__item + .nav__item {
+    margin-left: 20px;
+}
