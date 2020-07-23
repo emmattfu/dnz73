@@ -13,7 +13,6 @@ const Navigation = () => {
             <NavLink className="nav__item" to="/registration-info">Реєстрація до закладу</NavLink>
             <NavLink className="nav__item" to="/parents-info">Батькам</NavLink>
             <NavLink className="nav__item" to="/contacts">Контакти</NavLink>
-     
         </nav>
     )
 }

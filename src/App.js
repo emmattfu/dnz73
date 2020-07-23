@@ -15,6 +15,7 @@ function App() {
     <div className="App">
       <Header />
 
+      <Container>
       <div className="content">
         <Container>
           <Switch>
@@ -27,6 +28,8 @@ function App() {
           </Switch>
         </Container>  
       </div>
+      </Container>
+      
       
       <Footer />
     </div>

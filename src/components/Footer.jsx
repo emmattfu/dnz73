@@ -23,7 +23,7 @@ const Footer = () => {
             <div className="footer_sites">
               <p>Корисні посилання:</p>
               <ul className="footer__sites-list">
-                <li>
+                <li className="footer__list-item">
                   <a
                     href="https://mon.gov.ua/ua"
                     rel="noopener noreferrer"
@@ -32,7 +32,7 @@ const Footer = () => {
                     Міністерство oсвіти і науки, молоді та спорту України
                   </a>
                 </li>
-                <li>
+                <li className="footer__list-item">
                   <a
                     href="https://www.chernigiv-rada.gov.ua"
                     rel="noopener noreferrer"
