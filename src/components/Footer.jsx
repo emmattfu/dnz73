@@ -1,14 +1,50 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
+import { Container, Row, Col } from "react-bootstrap";
 
-import { Container } from "react-bootstrap";
-
-import '../styles/footer.css'
+import "../styles/footer.css";
 
 const Footer = () => {
   return (
     <footer className="footer">
       <Container>
-        <h1>Footer</h1>
+        <Row>
+          <Col >
+            <div className="footer_nav">
+              <NavLink to="/">Головна</NavLink>
+              <NavLink to="/about-us">Візитівка</NavLink>
+              <NavLink to="/news">Новини</NavLink>
+              <NavLink to="/registration-info">Реєстрація до закладу</NavLink>
+              <NavLink to="/parents-info">Батькам</NavLink>
+              <NavLink to="/contacts">Контакти</NavLink>
+            </div>
+          </Col>
+          <Col>
+            <div className="footer_sites">
+              <p>Корисні посилання:</p>
+              <ul className="footer__sites-list">
+                <li>
+                  <a
+                    href="https://mon.gov.ua/ua"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    Міністерство oсвіти і науки, молоді та спорту України
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.chernigiv-rada.gov.ua"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    Офіційний веб-портал Чернігівської міської ради
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </Col>
+        </Row>
       </Container>
     </footer>
   );

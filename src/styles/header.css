@@ -18,3 +18,13 @@
     font-weight: 600;
     text-align: center;
 }
+
+.nav__icon.fb {
+    color: blue;
+    font-size: 30px;
+}
+
+.nav__icon.youtube {
+    color: red;
+    font-size: 30px;
+}

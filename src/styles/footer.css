@@ -1,4 +1,11 @@
 .footer {
     background-color: blueviolet;
     margin-top: auto;
+    color: white;
+    padding: 15px;
+}
+
+.footer_nav {
+    display: flex;
+    flex-direction: column;
 }

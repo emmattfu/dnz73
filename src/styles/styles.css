@@ -19,3 +19,17 @@ header {
     flex-grow: 0;
 }
 
+.content {
+    margin-top: 30px;
+}
+
+a, a:hover {
+    text-decoration: none;
+    color: inherit
+}
+
+ul, ol{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }

@@ -2,6 +2,7 @@ import React from "react";
 
 import { Container } from "react-bootstrap";
 import { Nav } from "./index";
+import { FaFacebook, FaYoutube, FaFacebookSquare } from 'react-icons/fa';
 
 import "../styles/header.css";
 
@@ -16,11 +17,15 @@ const Header = () => {
             </div>
             <div className="header__nav">
               <p className="header__name">Чернігівський дошкільний навчальний заклад № 73 <br /> Чернігівської міської ради Чернігівської області</p>
+              <FaFacebookSquare className="nav__icon fb"/>
+              <FaYoutube className="nav__icon youtube" />
             </div>
+          
           </div>
 
           <Nav />
         </div>
+   
       </Container>
     </header>
   );
