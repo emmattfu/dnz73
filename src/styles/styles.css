@@ -19,9 +19,6 @@ header {
     flex-grow: 0;
 }
 
-.content {
-    margin-top: 30px;
-}
 
 a, a:hover {
     text-decoration: none;
@@ -33,3 +30,20 @@ ul, ol{
     padding: 0;
     margin: 0;
   }
+
+.content {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.page-block,
+.aside {
+    background-color: white;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.page-title {
+    color: blueviolet;
+}
+
