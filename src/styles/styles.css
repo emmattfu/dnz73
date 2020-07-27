@@ -43,7 +43,15 @@ ul, ol{
     border-radius: 5px;
 }
 
-.page-title {
+.page-title,
+.content-link {
     color: blueviolet;
 }
 
+.content-link {
+    text-decoration: underline;
+}
+
+.content-link:hover {
+    color: blueviolet;
+}

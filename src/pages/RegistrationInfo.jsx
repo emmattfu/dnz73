@@ -32,7 +32,7 @@ const RegistrationInfo = () => {
       <p className="registration__text page-text">
         Перед початком роботи ознайомтесь з{" "}
         <a
-          className="registration__link"
+          className="registration__link content-link"
           href="https://reg.isuo.org/manuals/manual_ukr.pdf"
           target="_blank"
           rel="noopener noreferrer"
