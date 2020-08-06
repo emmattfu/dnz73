@@ -1,10 +1,14 @@
-import React from 'react'
-
+import React from "react";
+import { useDispatch } from "react-redux";
+import { getNews } from "../redux/actions/news";
+import { NewsList } from "../components";
 
 const News = () => {
-    return (
-        <h1>Новини</h1>
-    )
-}
+  const dispatch = useDispatch();
 
-export default News
+  dispatch(getNews());
+
+  return <NewsList />;
+};
+
+export default News;

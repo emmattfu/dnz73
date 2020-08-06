@@ -1,6 +1,7 @@
 export {default as Home} from './Home'
 export {default as AboutUs} from './AboutUs'
 export {default as News} from './News'
+export {default as NewsDetails} from './NewsDetails'
 export {default as Registration} from './RegistrationInfo'
 export {default as Contacts} from './Contacts'
 export {default as ParentsInfo} from './ParentsInfo'

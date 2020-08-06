@@ -7,6 +7,7 @@ import {
   Home,
   AboutUs,
   News,
+  NewsDetails,
   Registration,
   Contacts,
   ParentsInfo,
@@ -27,11 +28,8 @@ function App() {
                 <Route exact path="/" component={Home} />
                 <Route exact path="/about-us" component={AboutUs} />
                 <Route exact path="/news" component={News} />
-                <Route
-                  exact
-                  path="/registration-info"
-                  component={Registration}
-                />
+                <Route excat path="/news/:id" component={NewsDetails}/>
+                <Route excat path="/registration-info" component={Registration}/>
                 <Route exact path="/contacts" component={Contacts} />
                 <Route exact path="/parents-info" component={ParentsInfo} />
               </Switch>
