@@ -1,4 +1,4 @@
-import { GET_NEWS } from "../types";
+import { GET_NEWS, GET_SELECTED_NEWS } from "../types";
 import firebase from '../../firebase'
 
 export const getNews = () => {
@@ -17,4 +17,12 @@ export const getNews = () => {
 
        
     }
+}
+
+export const getSelectedNews = (id) => {
+  return(dispatch) => {
+    let docRef = firebase.firestore().collection("news").doc(id)
+    docRef.get()
+    .then(doc => dispatch({payload: doc.data(), type: GET_SELECTED_NEWS}))
+  }
 }
