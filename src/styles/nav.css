@@ -9,9 +9,40 @@
     padding: 15px 40px;
     position: relative;
     font-size: 16px;
+    background-color: blueviolet;
 }
 
 .nav__item:hover {
-    background-color: chartreuse;
+    background-color:#E119EA;
+    color: white;
     transition: background-color .2s linear;
+}
+
+.nav__item.group {
+    position: relative;
+}
+
+.nav__item.group:hover .nav__groups-list {
+    display: block;
+}
+
+.nav__groups-list {
+    position: absolute;
+    top: 49px;
+    width: 100%;
+    z-index: 100;
+    left: 0;
+    display: none;
+  
+}
+
+.nav__groups-list li {
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+    border-bottom: 1px solid white;
+}
+
+.nav__groups-list li a {
+    display: block;
 }

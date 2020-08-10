@@ -11,17 +11,21 @@ const NewsDetails = ({ match }) => {
   // );
 
   const dispatch = useDispatch()
-  dispatch(getSelectedNews(id))
+
+  React.useEffect(() => {
+    dispatch(getSelectedNews(id))
+  }, [])
 
   const selectedNews = useSelector(state => state.news.selectedNews)
+  console.log(selectedNews)
 
   return (
     <>
-      {selectedNews.length && (
+      {selectedNews.title && (
         <div className="detailed-news page-block">
-          <h3 className="page-title">{selectedNews[0].title}</h3>
-          <img src={selectedNews[0].url} alt="card-img" style={{width: '50%'}}/>
-          <p>{selectedNews[0].text}</p>
+          <h3 className="page-title">{selectedNews.title}</h3>
+          <img src={selectedNews.url} alt="card-img" style={{width: '50%'}}/>
+          <p>{selectedNews.text}</p>
         </div>
       )}
     </>

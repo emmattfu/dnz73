@@ -5,7 +5,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import { Header, Footer, Aside } from "./components";
 import {
   Home,
-  AboutUs,
+  Group,
   News,
   NewsDetails,
   Registration,
@@ -26,7 +26,7 @@ function App() {
             <Col xs={8} className="content__main">
               <Switch>
                 <Route exact path="/" component={Home} />
-                <Route exact path="/about-us" component={AboutUs} />
+                <Route exact path="/group/:number" component={Group} />
                 <Route exact path="/news" component={News} />
                 <Route excat path="/news/:id" component={NewsDetails}/>
                 <Route excat path="/registration-info" component={Registration}/>
