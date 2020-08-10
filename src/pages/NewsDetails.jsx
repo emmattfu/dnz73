@@ -26,6 +26,7 @@ const NewsDetails = ({ match }) => {
           <h3 className="page-title">{selectedNews.title}</h3>
           <img src={selectedNews.url} alt="card-img" style={{width: '50%'}}/>
           <p>{selectedNews.text}</p>
+          <p>Більше фото на <a href={selectedNews.morePhoto}>нашій сторінці в Фейсбук</a></p>
         </div>
       )}
     </>
