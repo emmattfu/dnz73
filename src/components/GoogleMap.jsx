@@ -13,6 +13,8 @@ const mapContainerStyle = {
   height: "500px",
 };
 
+const key = "AIzaSyDKebZ7QCuikDje6uhpogdL49CtnOBgNXs"
+
 const center = {
   lat: 51.515954,
   lng: 31.314576,
@@ -26,7 +28,7 @@ const options = {
 const MyGoogleMap = () => {
   const [selected, setSelected] = React.useState(false);
   const { isLoaded, loadError } = useLoadScript({
-    googleMapsApiKey: process.env.REACT_APP_GOOGLE_MAPS_API_KEY,
+    googleMapsApiKey: key,
   });
 
   if (loadError) return "Error loading map";
