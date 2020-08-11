@@ -1,8 +1,14 @@
+:root {
+    --main-color: #6B427A;
+    --main-color-light: #B16DCA;
+    --bacground: #e7ecef;
+}
+
 body {
     display: flex;
     flex-direction: column;
     color: black;
-    background-color: #e7ecef;
+    background-color: var(--bacground);
     font: 400 14px/1.2 'Roboto', sans-serif;
 }
 
@@ -60,7 +66,7 @@ img {
 
 .page-title,
 .content-link {
-    color: blueviolet;
+    color: var(--main-color-light);
 }
 
 .content-link {
@@ -68,7 +74,7 @@ img {
 }
 
 .content-link:hover {
-    color: blueviolet;
+    color: var(--main-color-light);
 }
 
 .news-card {

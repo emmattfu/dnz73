@@ -1,4 +1,6 @@
 import React from "react";
+import {MyGoogleMap} from '../components'
+
 
 const Contacts = () => {
   return (
@@ -12,7 +14,7 @@ const Contacts = () => {
       <p className="contacts__text page-text">Телефони: 3-42-57, 95-37-45</p>
       <p className="contacts__text page-text">Електронна пошта: <a className="content-link" href="mailto:dnz73.d@os.chernigiv-rada.gov.ua">dnz73.d@os.chernigiv-rada.gov.ua</a></p>
 
-
+      <MyGoogleMap />
     </div>
   );
 };

@@ -9,7 +9,7 @@
     justify-content: space-between;
     background-color: #fff;
     padding: 15px;
-    color: blueviolet;
+    color: var(--main-color);
     border-radius: 5px;
 }
 

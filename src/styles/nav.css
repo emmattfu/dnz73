@@ -1,6 +1,6 @@
 .nav {
     display: flex;
-    background: blueviolet;
+    background:var(--main-color);
 }
 
 .nav__item {
@@ -9,11 +9,11 @@
     padding: 15px 40px;
     position: relative;
     font-size: 16px;
-    background-color: blueviolet;
+    background-color: var(--main-color);
 }
 
 .nav__item:hover {
-    background-color:#E119EA;
+    background-color: var(--main-color-light);
     color: white;
     transition: background-color .2s linear;
 }
