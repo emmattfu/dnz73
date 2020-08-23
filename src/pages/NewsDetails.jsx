@@ -39,11 +39,11 @@ const NewsDetails = ({ match }) => {
           <img src={selectedNews.url} alt="card-img" style={{ width: "75%" }} />
           {ReactHtmlParser(selectedNews.text)}
 
-          <YouTube videoId="o5Fp_BgIb1s"  opts={opts}/>
+          <YouTube videoId={selectedNews.video.slice(2)}  opts={opts}/>
 
           <p>
             Більше фото на{" "}
-            <a href={selectedNews.morePhoto}>нашій сторінці в Фейсбук</a>
+            <a className="content-link" href={selectedNews.morePhoto}>нашій сторінці в Фейсбук</a>
           </p>
         </div>
       )}
