@@ -90,6 +90,19 @@ img {
     flex-grow: 2;
 }
 
+.news-card__btn {
+    background-color: var(--main-color);
+    border: 1px solid var(--main-color)
+}
+
+.news-card__btn:hover,
+.news-card__btn:active,
+.news-card__btn:focus,
+.btn-primary:not(:disabled):not(.disabled):active {
+    background-color: var(--main-color-light);
+    border: 1px solid var(--main-color-light)
+}
+
 .registration__list {
     font-size: 16px;
 }

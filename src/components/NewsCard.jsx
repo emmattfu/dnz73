@@ -1,11 +1,12 @@
 import React from "react";
 import {NavLink} from 'react-router-dom'
 import {Button} from 'react-bootstrap'
+import ReactHtmlParser from 'react-html-parser';
 
 const NewsCard = ({ data }) => {
 
-  const text =
-    "Мої хороші дітки! Як цікаво знову дізнатись про те, що музика оточує нас скрізь! Вона живе в усьому, треба тільки прислухатись! Сьогодні в наших руках зазвучить навіть папір! Отже, готуйте листок кольорового паперу та танцюйте разом зі мною та моїми помічницями! Мої хороші дітки! Як цікаво знову дізнатись про те, що музика оточує нас скрізь! Вона живе в усьому, треба тільки прислухатись! Сьогодні в наших руках зазвучить навіть папір! Отже, готуйте листок кольорового паперу та танцюйте разом зі мною та моїми помічницями!";
+  const text = ReactHtmlParser(data.text)
+  console.log(text)
 
   return (
     <div className="news-card page-block">
@@ -22,10 +23,10 @@ const NewsCard = ({ data }) => {
         </div>
 
         <div className="news-card__text">
-          <p>{text.length > 220 ? text.slice(0, 220) + "..." : text}</p>
+          {text.length > 220 ? text.slice(0, 220) + "..." : text}
         </div>
 
-        <Button>
+        <Button className="news-card__btn">
           <NavLink to={`/news/${data.id}`}>Читати повністю</NavLink>
         </Button>
       </div>

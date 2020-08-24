@@ -1,14 +1,23 @@
-import React from "react";
-import { useDispatch } from "react-redux";
+import React, {useEffect} from "react";
+import { useDispatch, useSelector } from "react-redux";
 import { getNews } from "../redux/actions/news";
-import { NewsList } from "../components";
+import {NewsCard, Spinner } from "../components";
+
 
 const News = () => {
   const dispatch = useDispatch();
+  const news = useSelector(state => state.news.news)
 
-  dispatch(getNews());
+  useEffect(() => {
+    dispatch(getNews());
+  }, [dispatch])
 
-  return <NewsList />;
+
+  if (!news.length) {
+    return <Spinner />
+  }
+
+  return <>{news && news.map((el) => <NewsCard data={el} key={el.id} />) || <Spinner />}</>;
 };
 
 export default News;
