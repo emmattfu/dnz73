@@ -1,10 +1,5 @@
 import React from "react";
-import {
-  GoogleMap,
-  useLoadScript,
-  Marker,
-  InfoWindow,
-} from "@react-google-maps/api";
+import {GoogleMap, useLoadScript, Marker} from "@react-google-maps/api";
 
 import icon from "../assets/school.png";
 
@@ -26,7 +21,6 @@ const options = {
 };
 
 const MyGoogleMap = () => {
-  const [selected, setSelected] = React.useState(false);
   const { isLoaded, loadError } = useLoadScript({
     googleMapsApiKey: key,
   });
@@ -50,7 +44,6 @@ const MyGoogleMap = () => {
             origin: new window.google.maps.Point(0, 0),
             anchor: new window.google.maps.Point(15, 15)
           }}
-          onClick={() => setSelected(true)}
         />
       </GoogleMap>
     </>

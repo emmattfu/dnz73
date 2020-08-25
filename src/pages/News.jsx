@@ -17,7 +17,7 @@ const News = () => {
     return <Spinner />
   }
 
-  return <>{news && news.map((el) => <NewsCard data={el} key={el.id} />) || <Spinner />}</>;
+  return <>{news.map((el) => <NewsCard data={el} key={el.id} />)}</>;
 };
 
 export default News;

@@ -23,7 +23,7 @@ const NewsCard = ({ data }) => {
         </div>
 
         <div className="news-card__text">
-          {text.length > 220 ? text.slice(0, 220) + "..." : text}
+          {text[0].props.children}
         </div>
 
         <Button className="news-card__btn">

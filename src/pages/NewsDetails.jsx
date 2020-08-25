@@ -26,7 +26,7 @@ const NewsDetails = ({ match }) => {
 
   return (
     <>
-      {selectedNews.title && (
+      {selectedNews.title ?
         <div className="detailed-news page-block">
           <div className="detailed-news__header">
             <h3 className="detailed-news__title page-title">
@@ -46,7 +46,7 @@ const NewsDetails = ({ match }) => {
             <a className="content-link" href={selectedNews.morePhoto}>нашій сторінці в Фейсбук</a>
           </p>
         </div>
-      ) || <Spinner />}
+       : <Spinner />}
     </>
   );
 };

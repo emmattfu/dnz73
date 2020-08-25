@@ -92,7 +92,8 @@ img {
 
 .news-card__btn {
     background-color: var(--main-color);
-    border: 1px solid var(--main-color)
+    border: 1px solid var(--main-color);
+    margin-top: 15px;
 }
 
 .news-card__btn:hover,
